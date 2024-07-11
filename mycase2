@@ -1,0 +1,26 @@
+shopt -s extglob
+
+read -p "Enter String: " text
+
+case $text in
++([A-Z]))
+    echo UpperCase
+    ;;
+
++([a-z]))
+    echo LowerCase
+    ;;
+
++([0-9]))
+    echo Number
+    ;;
+
++([A-Za-z0-9]))
+    echo Mix
+    ;;
+
+*)
+    echo Nothing
+    ;;
+
+esac
