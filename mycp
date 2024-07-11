@@ -1,0 +1,13 @@
+if (( $# == 2 ))
+then
+
+cp "$1" "$2"
+
+    else
+    last="${@: -1}"
+    if [ -d "$last" ]
+    then 
+
+    cp "${@:1:$#-1}" "$last/"
+  fi
+fi

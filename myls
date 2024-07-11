@@ -1,0 +1,19 @@
+if (( $# == 0 ))
+then
+
+ls ./
+ls -ld ./
+ls -a ./
+ls -i ./
+ls -R ./
+
+elif [ -d $1 ]
+then
+
+ls "$1"
+ls -ld "$1"
+ls -a "$1"
+ls -i "$1"
+ls -R "$1"
+
+fi

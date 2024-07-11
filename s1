@@ -1,0 +1,11 @@
+x=5
+bash ./s2 "$x"
+
+
+export x=5
+bash s2
+
+
+
+
+
