@@ -1,0 +1,22 @@
+shopt -s extglob
+
+read -p "Enter One Character: " char
+
+case $char in
+[A-Z])
+    echo UpperCase
+    ;;
+
+[a-z])
+    echo LowerCase
+    ;;
+
+[0-9])
+    echo Number
+    ;;
+
+*)
+    echo Nothing
+    ;;
+
+esac

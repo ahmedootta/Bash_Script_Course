@@ -1,0 +1,6 @@
+for filee in /home/ahmedfadl/*
+do
+
+chmod u+x $filee
+
+done    
